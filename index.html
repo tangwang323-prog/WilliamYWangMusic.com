@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>William Yucheng Wang</title>
+  <meta name="theme-color" content="#0b0a08" />
+  <meta name="description" content="William Yucheng Wang — piano and composition portfolio." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell" aria-label="William Yucheng Wang interactive slide website">
+    <header class="topbar" aria-label="Primary navigation">
+      <button class="brand" data-go="home" aria-label="Go to Home">
+        <span class="brand-name">William Yucheng Wang</span>
+        <span class="brand-line"><span></span></span>
+      </button>
+      <nav>
+        <button data-go="home">Home</button>
+        <button data-go="compositions">Compositions</button>
+        <button data-go="awards">Awards</button>
+        <button data-go="biography">Biographies</button>
+        <button data-go="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main class="deck">
+      <div class="track" id="track">
+        <section class="slide home-slide" id="home" data-slide="home" aria-label="Home slide">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="home-content">
+            <p class="kicker">Pianist &amp; Composer</p>
+            <h1>William<br />Yucheng<br />Wang</h1>
+            <p class="hero-copy">An interactive portfolio for original compositions, remixes, awards, biography, and contact.</p>
+            <div class="hero-actions">
+              <button data-go="compositions">View Compositions</button>
+              <button data-go="biography">Read Biography</button>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Profile summary">
+            <div>
+              <span>Discipline</span>
+              <strong>Piano &amp; Composition</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Classical • Original Works • Reimaginings</strong>
+            </div>
+          </aside>
+        </section>
+
+        <section class="slide composition-slide" id="compositions" data-slide="compositions" aria-label="Compositions slide">
+          <div class="section-head">
+            <p class="kicker">Catalogue</p>
+            <h1>Compositions</h1>
+            <p>Original works, remixes, and reimaginings for solo piano.</p>
+          </div>
+          <div class="tab-row" role="tablist" aria-label="Composition categories">
+            <button class="tab active" data-list-toggle="original" role="tab" aria-selected="true">Original Compositions <span>5</span></button>
+            <button class="tab" data-list-toggle="remix" role="tab" aria-selected="false">Remixes &amp; Reimaginings <span>6</span></button>
+          </div>
+          <div class="lists">
+            <div class="piece-list active" data-list="original"></div>
+            <div class="piece-list" data-list="remix"></div>
+          </div>
+        </section>
+
+        <section class="slide awards-slide" id="awards" data-slide="awards" aria-label="Awards slide">
+          <div class="section-head awards-head">
+            <p class="kicker">Recognition</p>
+            <h1>Awards &amp; Honours</h1>
+            <p>A blank year-by-year awards area. Click a year to open the dropdown and add awards later.</p>
+          </div>
+          <div class="award-year-panel" aria-label="Awards by year">
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2020</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2021</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2022</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2023</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2024</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2025</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+            <article class="award-year">
+              <button class="year-toggle" type="button" aria-expanded="false"><span><span class="trophy">♕</span>2026</span><span class="year-arrow">⌄</span></button>
+              <div class="year-body"><p class="empty-note">Blank for now.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide biography-slide" id="biography" data-slide="biography" aria-label="Biography slide">
+          <div class="section-head bio-head">
+            <p class="kicker">About</p>
+            <h1>Biography</h1>
+          </div>
+          <div class="bio-grid">
+            <aside class="bio-facts">
+              <div><span>Born</span><strong>March 13, 2013</strong></div>
+              <div><span>Birthplace</span><strong>Hancock, Michigan</strong></div>
+              <div><span>Age</span><strong>13 years old</strong></div>
+              <div><span>Discipline</span><strong>Piano &amp; Composition</strong></div>
+            </aside>
+            <article class="bio-copy">
+              <p><strong>William Yucheng Wang</strong> was born on March 13, 2013, in Hancock, Michigan — a small copper-country town on the Upper Peninsula.</p>
+              <p>From his earliest years, William displayed an extraordinary sensitivity to sound and an instinctive understanding of musical structure. He began piano studies at age four, and by seven had performed his first public recital to a standing ovation at a local music festival.</p>
+              <p>His development as both a performer and composer has been remarkably swift. Drawing on the rich tradition of the Western classical canon while weaving in influences from his Chinese heritage, William has forged a voice that is at once deeply rooted and strikingly original.</p>
+              <p>William continues to study, compose, and perform, with a growing profile that promises a career of enduring significance.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide contact-slide" id="contact" data-slide="contact" aria-label="Contact slide">
+          <div class="section-head contact-head">
+            <p class="kicker">Get in touch</p>
+            <h1>Contact</h1>
+            <p>For concert bookings, press enquiries, commissioning, or general correspondence, please reach out directly.</p>
+          </div>
+          <div class="contact-cards">
+            <article class="contact-card">
+              <span class="contact-icon">✉</span>
+              <div>
+                <span>Email</span>
+                <strong>tang.wang323@gmail.com</strong>
+                <p>Bookings, press, and general enquiries</p>
+              </div>
+            </article>
+            <article class="contact-card">
+              <span class="contact-icon">☏</span>
+              <div>
+                <span>Phone</span>
+                <strong>+1 (689) 284-9000</strong>
+                <p>Available Monday – Friday, 10am – 6pm ET</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
