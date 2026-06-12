@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>William Yucheng Wang</title>
+  <meta name="theme-color" content="#0b0a08" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="deck" aria-label="William Yucheng Wang slide website">
+    <div class="track" id="track">
+      <section class="slide media-slide" id="home" data-slide="home" data-hotspot-type="video" aria-label="Home recording slide">
+        <video class="slide-media" id="homeVideo" src="assets/home-recording.mp4" poster="assets/home-poster.jpg" autoplay muted loop playsinline></video>
+        <button class="play-toggle" type="button" aria-label="Pause or play recording">Pause</button>
+      </section>
+
+      <section class="slide composition-slide" id="compositions" data-slide="compositions" aria-label="Compositions slide">
+        <header class="real-nav">
+          <div class="brand">William Yucheng Wang</div>
+          <nav aria-label="Main navigation">
+            <button data-go="home">Home</button>
+            <button class="active" data-go="compositions">Compositions</button>
+            <button data-go="awards">Awards</button>
+            <button data-go="biography">Biographies</button>
+            <button data-go="contact">Contact</button>
+          </nav>
+        </header>
+        <div class="composition-panel">
+          <p class="kicker">Catalogue</p>
+          <h1>Compositions</h1>
+          <p class="intro">Original works, remixes, and reimaginings for solo piano.</p>
+          <div class="tab-row" role="tablist" aria-label="Composition categories">
+            <button class="tab active" data-list-toggle="original">Original Compositions <span>5</span></button>
+            <button class="tab" data-list-toggle="remix">Remixes & Reimaginings <span>6</span></button>
+          </div>
+          <div class="lists">
+            <div class="piece-list active" data-list="original"></div>
+            <div class="piece-list" data-list="remix"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide media-slide awards-interactive" id="awards" data-slide="awards" data-hotspot-type="screenshot" aria-label="Awards slide">
+        <img class="slide-media" src="assets/awards.jpg" alt="Awards and Honours slide" />
+        <div class="awards-obscure" aria-hidden="true"></div>
+        <div class="award-year-panel" aria-label="Awards by year">
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2020</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2021</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2022</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2023</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2024</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2025</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+          <button class="year-toggle" type="button" aria-expanded="false">
+            <span class="year-main"><span class="trophy">♕</span><span>2026</span></span><span class="year-arrow">⌄</span>
+          </button>
+          <div class="year-body"></div>
+        </div>
+      </section>
+
+      <section class="slide media-slide" id="biography" data-slide="biography" data-hotspot-type="screenshot" aria-label="Biography screenshot slide">
+        <img class="slide-media" src="assets/biography.jpg" alt="Biography slide" />
+      </section>
+
+      <section class="slide media-slide" id="contact" data-slide="contact" data-hotspot-type="screenshot" aria-label="Contact screenshot slide">
+        <img class="slide-media" src="assets/contact.jpg" alt="Contact slide" />
+      </section>
+    </div>
+  </main>
+
+  <div class="hotspots" id="hotspots" aria-label="Invisible screenshot navigation">
+    <button data-go="home" aria-label="Go to Home"></button>
+    <button data-go="compositions" aria-label="Go to Compositions"></button>
+    <button data-go="awards" aria-label="Go to Awards"></button>
+    <button data-go="biography" aria-label="Go to Biographies"></button>
+    <button data-go="contact" aria-label="Go to Contact"></button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
